@@ -1,0 +1,273 @@
+/* --------------------- */
+/* BASIC SETUP */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    background-color: #fff;
+    color: #ffffff;
+    font-family: 'Arimo','Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+
+}
+
+/* --------------------- */
+/* REUSABLE COMPONENTS */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80 px 0    
+}
+
+.box {
+    padding: 2%;
+}
+
+/* --------------------- */
+/* HEADINGS */
+
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* --------------------- */
+/* PARAGRAPHS */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+/* --------------------- */
+/* ICONS */
+
+.icon-big {
+    
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+
+/* --------------------- */
+/* BUTTONS */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px; 
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+btn-full:hover,
+.btn-full:active {
+    border: 1px solid #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+
+/* --------------------- */
+/* HEADER */
+
+
+header {
+
+}
+
+body .area_with_background {
+
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)), url(img/start-page.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+}
+
+.h1-text-box {
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 20%;
+    transform: translate(-40%; -40%);
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+
+} 
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/* --------------------- */
+/* ICONS SECTION */
+
+
+.content-description {
+    word-spacing: 2px;
+    margin-top: 20px;
+}
+
+.section-features {
+    color: #000;
+}
+
+
+.head_of_2nd_section {
+    text-align: center;
+}
+
+.head_of_2nd_section h2 {
+    font-size: 190%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* setting for small line (not working yet) under h2 header of section with icons
+.head_of_2nd_section::after {
+    color: darkgreen;
+    width: 200px;
+    height: 10px;
+    content: " ";
+}*/
+
+/* --------------------- */
+/* GARDENS */
+
+.gardens-showcase {
+    list-style: none;
+    width: 100%;
+    
+}
+
+.gardens-showcase li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.garden-photo {
+    width: 100%;
+    margin: 0;
+    
+}
+
+.garden-photo img {
+    width: 100%;
+    height: auto;
+}
