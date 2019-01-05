@@ -10,12 +10,20 @@
 
 html {
     background-color: #fff;
-    color: #ffffff;
     font-family: 'Arimo','Arial', sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /* --------------------- */
@@ -60,11 +68,13 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+    margin-top: 15px;
     
 }
 
@@ -180,7 +190,7 @@ body .area_with_background {
     height: 50px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
 
 }
 
@@ -238,13 +248,7 @@ body .area_with_background {
     margin-bottom: 40px;
 }
 
-/* setting for small line (not working yet) under h2 header of section with icons
-.head_of_2nd_section::after {
-    color: darkgreen;
-    width: 200px;
-    height: 10px;
-    content: " ";
-}*/
+
 
 /* --------------------- */
 /* GARDENS */
@@ -252,7 +256,6 @@ body .area_with_background {
 .gardens-showcase {
     list-style: none;
     width: 100%;
-    
 }
 
 .gardens-showcase li {
@@ -264,10 +267,72 @@ body .area_with_background {
 .garden-photo {
     width: 100%;
     margin: 0;
+    overflow: hidden;
     
 }
 
 .garden-photo img {
+    opacity: 0.9;
     width: 100%;
-    height: auto;
+    height: 205px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+    
+}
+
+.garden-photo img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.section-gardens {
+    margin: 30px 0px 40px 0px;
+    
+}
+
+
+/* --------------------- */
+/* STEPS */
+
+.section-steps {
+    font-size: 16px;
+    word-spacing: 2px;
+    
+}
+
+.section-steps h2 {
+    font-size: 190%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.steps-box:first-child {
+    text-align: left;
+    padding-left: 10%;
+}
+
+.steps-box:last-child {
+    padding-right: 5%;
+    line-height: 1.4;
+}
+
+.item-number {
+    margin-bottom: 70px;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    padding-bottom: 0px;
+    float: left;
+    margin-right: 25px;
+}
+
+.section-steps h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
