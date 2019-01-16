@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    color: #000;
 }
 
 html {
@@ -75,7 +75,7 @@ h3 {
     font-size: 110%;
     margin-bottom: 15px;
     margin-top: 15px;
-    
+
 }
 
 h2:after {
@@ -106,7 +106,7 @@ h2:after {
 /* ICONS */
 
 .icon-big {
-    
+
     font-size: 350%;
     display: block;
     color: #e67e22;
@@ -182,7 +182,7 @@ body .area_with_background {
     position: absolute;
     width: 1000px;
     top: 50%;
-    left: 20%;
+    left: 10%;
     transform: translate(-40%; -40%);
 }
 
@@ -191,7 +191,6 @@ body .area_with_background {
     width: auto;
     float: left;
     margin-top: 40px;
-
 }
 
 .main-nav {
@@ -209,13 +208,12 @@ body .area_with_background {
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
-
 }
 
 .main-nav li a:hover,
@@ -246,6 +244,7 @@ body .area_with_background {
     font-size: 190%;
     margin-top: 40px;
     margin-bottom: 40px;
+    padding-top: 40px;
 }
 
 
@@ -267,8 +266,7 @@ body .area_with_background {
 .garden-photo {
     width: 100%;
     margin: 0;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 
 .garden-photo img {
@@ -276,8 +274,7 @@ body .area_with_background {
     width: 100%;
     height: 205px;
     transform: scale(1.2);
-    transition: transform 0.5s;
-    
+    transition: transform 0.5s;   
 }
 
 .garden-photo img:hover {
@@ -286,8 +283,7 @@ body .area_with_background {
 }
 
 .section-gardens {
-    margin: 30px 0px 40px 0px;
-    
+    margin: 30px 0px 0px 0px;
 }
 
 
@@ -297,7 +293,9 @@ body .area_with_background {
 .section-steps {
     font-size: 16px;
     word-spacing: 2px;
-    
+    background-color: #f2f2f2; 
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 .section-steps h2 {
@@ -335,4 +333,89 @@ body .area_with_background {
 .section-steps h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.steps-img {
+    height: 510px;
+    margin-left: 15%;    
+}
+
+/* --------------------- */
+/* FARMS */
+
+.farm-column img{
+    width: 90%;
+}
+
+
+.kyivfarm-locations {
+    padding-top: 70px;
+    padding-bottom: 80px;
+
+}
+
+
+
+/* --------------------- */
+/* FOOTER */
+
+footer {
+    background-color: #626262;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.footer-nav {
+    float: left;
+    list-style: none;
+    letter-spacing: 0.5px
+
+}
+
+
+.social-links {
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+    font-size: 150%;
+}
+
+.social-links li {
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+
+} 
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: gainsboro;
+    letter-spacing: 0.5px
+
+
 }
