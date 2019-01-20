@@ -253,11 +253,12 @@ body .area_with_background {
 /* GARDENS */
 
 .gardens-showcase {
+    list-style: none;
     width: 100%;
 }
 
 .gardens-showcase figure {
-    display: inline;
+    display: block;
     width: 25%;
     float: left;
 }
