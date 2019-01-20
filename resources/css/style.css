@@ -257,7 +257,7 @@ body .area_with_background {
 }
 
 .gardens-showcase figure {
-    display: block;
+    display: inline;
     width: 25%;
     float: left;
 }
