@@ -272,13 +272,12 @@ body .area_with_background {
 .garden-photo img {
     opacity: 0.9;
     width: 100%;
-    height: 205px;
     transform: scale(1.2);
     transition: transform 0.5s;   
 }
 
 .garden-photo img:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
     opacity: 1;
 }
 
@@ -343,8 +342,8 @@ body .area_with_background {
 /* --------------------- */
 /* FARMS */
 
-.farm-column img{
-    width: 90%;
+.kyivfarm-locations img {
+    width: 100%;
 }
 
 
